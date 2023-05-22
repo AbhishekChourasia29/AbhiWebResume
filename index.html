@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Web CV</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">My Profile</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#mycertificate" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">MY CERTIFICATE</a>
+        <a href="#myskills" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">MY SKILLS</a>
+
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="./abhishek.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--Social NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/isha.chourasia.96" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/abhi__29122003/?next=%2F" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/abhishek-chourasia-2667a3234/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+          
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">My Profile</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#myskills" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">MY SKILLS</a>
+          <a href="#mycertificate" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">MY CERTIFICATE</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            <h1>Abhishek Chourasia</h2>
+            <h2>Information Technology Student</h3>
+            <h2>Domain - Artificial Intelligence and Machine Learning</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              Hello guys , I am Abhishek Chourasia from Indore.
+              A proactive Bachelor of Science in Computer Science (Artificial Intelligence  
+              and Machine Learning) student at the Medi-caps University ,
+              Indore with strong academic achievement and volunteering
+              experience. I am affable person also. Possess strong
+              leadership and communication skills with fluency in Hindi and
+              English. Keen to pursue a career in Professional IT Services
+              with a focus on Machine Learning and Data Analytics.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber"></h3>
+              <div class="">
+                <h3><b>Internship</b></h3>
+                <h4>Oasis Infobyte Delhi , India</h4>
+                <p>1-November-2022 to 30-November-2022</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Internship Type: Remote</li>
+                  <li>It's my first virtual internship.</li>
+                  <li>One month internship in Java Devlopment with wonderful remarks at Oasis Infobyte.</li>
+                  <li>Built relations with the online community.</li>
+                  <li>Implemented some tasks such as:
+                    <ul style="list-style-type: styleity;"><li>Online Examination</li>
+                    <li>Number Guessing Game.</li></ul>
+                  </li>
+                </ul>
+                <br></br>
+                <h4>CodeClause Pune , India</h4>
+                <p>1-May-2023 to 31-May-2023 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Internship Type: Remote</li>
+                  <li>It's my second virtual internship.</li>
+                  <li>One month internship in Python Devlopment with wonderful remarks at CodeClause.</li>
+                  <li>Built relations with the online community.</li>
+                  <li>Implemented some tasks such as:
+                    <ul style="list-style-type: styleity;"><li>Music Player in Python</li>
+                    <li>Calculator in Python</li></ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <h3><b>Cocurricular Activities</b></h3>
+                <h4>Transtemporal Tattle Trails Competition</h4>
+                <p>October 2021 - December 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>It is a Pen India Competition Organized by I-Nurture Education Solution Bangalore.</li>
+                  <li>Me and my taem mates are first runner up in this competition.</li>
+                  <li>Here i enhaced my leadership qualities as well as communication skills</li>
+                </ul>
+                 <h4>CodeVir Competition</h4>
+                <p>October 2021 - December 2021 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>It is a Pen India Competition also Organized by I-Nurture Education Solution Bangalore.</li>
+                  <li>I participated collectively in this competition.</li>
+                  <li>Here i enhaced my leadership qualities as well as programming skills</li>
+                </ul>
+              </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber"><b>MY EDUCATION</b></h3>
+                <h4>Bachelor of Science in Computer Science(AIML) at Medicaps University Indore.</h4>
+                <p>August 2021 - July 2024 </p>
+                <p>Grade - 8.69 CGPA in Third Semester</p>
+                <br></br>
+                <h4>Higher Secondary School(10+2)(Physics Chemistry Maths) at Karnataka Vidya Niketan Indore</h4>
+                <p>July 2007 - March 2021 </p>
+                <p>State board english medium school.</p>
+                <p>Grade in class 10 - 85.6 percent</p>
+                <p>Grade in class 12 - 86.4 percent</p>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber"><b>MY HOBBIES AND INTERESTS</b></h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>I love reading novels and cycling in my free time</li>
+                  <li>I like to play board games as well as Cricket with friends.</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber"><b>MY REFERENCES</b></h3>
+              <h4>CodeWithHarry</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>codeWithhHarry.com</li>
+              </ul>
+              <h4>Uday Vaishnav BCA Student at Scsit Davv , Indore</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+91 952221189</li>
+                <li>udayvaishnav24@gmail.com</li>
+              </ul>
+            </div>            
+          </div>
+ <!---Certificate Section-->
+ <div id ="mycertificate" class="w3-container w3-margin-top-2 w3-cursive">
+  <h3 class="w3-border-amber"><b>MY CERTIFICATE & LICENSES</b></h3>
+    <h4>All Certificate from Great Learning.</h4>
+    <ul class="w3-ul" style="font-weight: 500;font-size: 17px;">
+      <li><b>1. Java Programming</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Isuued April 2023</li>
+        <a href="https://verify.mygreatlearning.com/verify/BJYGEILV"><b><li>Click Here to verify My Certificate</b></li></a>
+      </ul>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li><b>2. OOPs in Python</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued April 2023</li>
+          <a href="https://verify.mygreatlearning.com/verify/LEDNUEVE"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+        <li><b>3. Python Tkinter</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Isuued April 2023</li>
+        <a href="https://verify.mygreatlearning.com/verify/ZLBCXTRJ"><b><li>Click Here to verify My Certificate</b></li></a>
+      </ul>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li><b>4.  to Neural Networks and Deep Learning</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued February 2023</li>
+          <a href="https://verify.mygreatlearning.com/verify/ZDTKKQBE"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li><b>5. OOps in Java</b></li>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Isuued September 2022</li>
+            <a href="https://verify.mygreatlearning.com/verify/CQKVEOJX"><b><li>Click Here to verify My Certificate</b></li></a>
+          </ul>
+          <br></br>
+    <h4>All Certificate from Cisco.</h4>
+    <ul class="w3-ul" style="font-weight: 500;font-size: 17px;">
+      <li><b>1. Python Essential 1</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Isuued April 2023</li>
+        <a href="https://www.credly.com/badges/0b5fe7f1-8192-4df1-8a8a-421992c38b37/linked_in_profile"><b><li>Click Here to verify My Certificate</b></li></a>
+      </ul>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li><b>2. Operating System Basics</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued April 2023</li>
+          <a href="https://www.credly.com/badges/26eedaa3-1fc2-42db-8719-a6d38a2a5117/linked_in_profile"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+        <li><b>3. Networking Essential</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Isuued March 2023</li>
+        <a href="https://www.credly.com/badges/5bf39237-e615-4987-841a-f629dab9ab8d/linked_in_profile"><b><li>Click Here to verify My Certificate</b></li></a>
+      </ul>
+      <br></br>
+      <h4>All Badges from HackerRank.</h4>
+      <ul class="w3-ul" style="font-weight: 500;font-size: 17px;">
+        <li><b>1. Python(Basics)</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued November 2022</li>
+          <a href="https://www.hackerrank.com/certificates/40f8902bfee6"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li><b>2. Java(Basics)</b></li>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Isuued November 2022</li>
+            <a href="https://www.hackerrank.com/certificates/2bddfe20fbc9"><b><li>Click Here to verify My Certificate</b></li></a>
+          </ul>
+          <li><b>3. Sql(Basics)</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued February 2023</li>
+          <a href="https://www.hackerrank.com/certificates/ca9ad2dc2d45"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+        <br></br>
+        <h4>All Certificate from Simplilearn and Sylor Academy.</h4>
+        <li><b>1. Introduction to Artificial Intelligence</b></li>
+          <ul class="w3-ul" style="font-weight: 500;">
+            <li>Isuued November 2022</li>
+            <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI5MzIiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl8zOTQ0MDM0XzE2Njg3NzQzNDMucG5nIiwidXNlcm5hbWUiOiJBYmhpc2hlayBDaG91cmFzaWEifQ&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2Fthumb_3944034_1668774343.png&_branch_match_id=1169232757085488051&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1nfO9DN3DAjyDK1MAgCeYXitIwAAAA%3D%3D"><b><li>Click Here to verify My Certificate</b></li></a>
+          </ul>
+          <li><b>2. CS107: C++ Programming</b></li>
+        <ul class="w3-ul" style="font-weight: 500;">
+          <li>Isuued October 2022</li>
+          <a href="https://certificates.saylor.org/55ae699f-0337-4a9f-88eb-a04119575e93#gs.yvpqw3"><b><li>Click Here to verify My Certificate</b></li></a>
+        </ul>
+</div>
+
+<!--SKILLS SECTION-->
+<div id = "myskills"class="w3-container w3-margin-top-2 w3-cursive">
+  <h3 class="w3-border-amber"><b>MY SKILLS<b></h3>
+  <!--SOFT SKILLS-->
+  <h4>Soft skills</h4>
+  <ul class="w3-ul" style="font-weight: 500;">
+    <li>I have no working experience in any company but
+        competitions gives me chance to represent my
+        communication skills in front of all. I glad to part of both
+        competition because both teach good rapport among
+        individual and group.</li>
+  </ul>
+  <br></br>
+  <h4>Leadership skills</h4>
+  <ul class="w3-ul" style="font-weight: 500;">
+    <li>I am the member of the coding club at Medi-Caps University.
+        Whose name is CodeINurture. While in this position, I got
+        good leadership qualities like how to struggle in difficult
+        situation and complete work well by focusing on goals
+        without getting distracted. I also learned teamwork from here.</li>
+  </ul>
+  <!--TECHNICAL SKILLS-->
+  <h4>Technical skills</h4>
+    <ul class="w3-ul" style="font-weight: 500;">
+      <li><b>C (Programming Language)</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>HTML</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>Css</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>C++</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>Java</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>Python</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>SQL</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Intermediate</li>
+      </ul>
+      <li><b>Artificial Nueral Network</b></li>
+      <ul class="w3-ul" style="font-weight: 500;">
+        <li>Beginner</li>
+      </ul>
+      <li><b>Data Structure and Algorithm</b></li>
+       <ul class="w3-ul" style="font-weight: 500;">
+        <li>Beginner</li>
+      </ul>
+      <li><b>Computer Networking</b></li>
+       <ul class="w3-ul" style="font-weight: 500;">
+        <li>Beginner</li>
+      </ul>
+      <li><b>Operating System</b></li>
+       <ul class="w3-ul" style="font-weight: 500;">
+        <li>Beginner</li>
+      </ul>
+      <li><b>Advanced Java</b></li>  
+       <ul class="w3-ul" style="font-weight: 500;">
+        <li>Beginner</li>
+      </ul>
+    </ul>
+</div>
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <b><p>Name: Abhishek Chouurasia</p>
+              <p>Adress: 174 , Tilak Nagar Indore </p>
+              <p>Phone number: +91 9752950569</p>
+              <p>E-mail: abhishekchourasia29122003@gmail.com</p>
+              <p>GitHub: <a href="https://github.com/AbhishekChourasia29">AbhishekChourasia29</a></p>
+              <p><a href="https://www.hackerrank.com/Abhishek29122003">HackkerRank Id</a></b></p>
+
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 Abhishek Chourasia</p>
+           <p class="w3-small">This website was made by Abhishek Chourasia</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
