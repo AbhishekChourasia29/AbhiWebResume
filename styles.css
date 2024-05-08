@@ -261,10 +261,10 @@ body * {
   transition: transform 0.3s ease;
 }
 
-.skill p {
+.skill h5 {
   margin: 0;
   font-weight: bold;
-  color: #333;
+  text-align: center;      
 }
 
 .skill:hover img {
